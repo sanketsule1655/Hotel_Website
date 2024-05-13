@@ -1,0 +1,314 @@
+.wrapper
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.body
+{
+    display: flex;
+    flex-direction: column;
+}
+.container
+ {
+    width: 80%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.header
+{
+    width: 100%;
+    min-height: 80px;
+    background-color:rgb(187, 183, 183);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo
+{
+    /* flex-basis: 30%; */
+}
+.logo img
+{
+    width: 7vw;
+    min-height: 80px;
+    padding-left: 80px;
+    padding-top: 5px;
+}
+.menu
+{
+    /* flex-basis: 60%; */
+    text-align: center;
+    padding-top: 25px;
+}
+.menu a
+{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.menu a:hover
+{
+    transform: scale(2);
+    background-color: orangered;
+}
+/* media query for header */
+@media screen and (max-width:768px)
+{
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: -80px;
+    }
+}
+.slider
+{
+    width:100%;
+    min-height: 70vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/MainImage.jpg);
+    background-size: 100% 100%;
+    color: white;
+    margin-top: 10px;
+}
+.slider h1
+{
+    font-size: 70px;
+    margin-top: 150px;
+}
+.slider h2
+{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.mainbody
+{
+    width:100%;
+    min-height: 500px;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.mainimagediv
+{
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 1%;
+    justify-content: space-around;
+}
+.imgediv
+{
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+}
+.imgediv img
+{
+    border-radius: 50%;
+}
+.box
+{
+    border: 1px solid;
+    flex-basis: 33%;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:768px)
+{
+    .mainbody
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainimagediv
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+.subbody
+{
+    width:100%;
+    min-height: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+.subbody2
+{
+    width: 95%;
+    /* border: 1px solid #000; */
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    gap:1%;
+    padding-left:40px;
+}
+.menupart
+{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    /* border: 1px solid #000; */
+    gap: 1px;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:768px)
+{
+    .subbody
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .subbody2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menupart
+    {
+        display: flex;
+        flex-direction: column;   
+    }
+}    
+.loginpage
+{
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgb(37, 34, 34);
+    display: flex;
+    flex-direction: column;
+}
+.loginpage h1
+{
+    color: white;
+}
+.mainlogin
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+.loginpage .contacth1
+{
+    text-align: center;
+}
+.loginform
+{
+    width: 40%;
+    padding-left: 30px;
+}
+.loginform form
+{
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    gap: 10px;
+}
+.loginform form input
+{
+    padding: 1%;
+    font-size: 0.8rem;
+}
+.submit1
+{
+    width: 30%;
+}
+.contactinfo
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo p
+{
+    color: white;
+    margin: 5px;
+    padding-left: 50px;
+}
+
+.contactlinks
+{
+    margin-top: 10px;
+    color: white;
+}
+.contactlinks a
+{
+    padding: 0%;
+    color:orangered;
+    padding-left: 55px;
+}
+.contactlinks a:hover
+{
+    color:white; 
+}
+.contact
+{
+    flex-basis: 30%;
+    border: 1px solid;
+}
+@media screen and (max-width:768px)
+{
+    .loginpage
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainlogin
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactinfo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactlinks
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}    
+.footer
+{
+    width: 100%;
+    min-height: 40px;
+    margin-top: 10px;
+    background-color:rgb(91, 88, 88);
+    text-align: center;
+}
